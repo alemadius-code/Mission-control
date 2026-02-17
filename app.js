@@ -132,6 +132,16 @@ function renderChat(data) {
   }
 }
 
+// Ticker
+function updateTicker(data) {
+  const now = new Date();
+  const time = now.toLocaleTimeString('ar-QA', { timeZone: 'Asia/Qatar' });
+  document.getElementById('tickerTime').textContent = '⏰ ' + time;
+  const team = data.team || [];
+  const active = team.filter(t => t.status === 'working').length;
+  document.getElementById('tickerStatus').textContent = '🟢 ' + active + ' نشط | آخر تحديث: ' + (data.lastUpdate || '—');
+}
+
 // Stats
 function renderStats(data) {
   const team = data.team || [];
@@ -155,6 +165,7 @@ async function refresh() {
     renderReports(data);
     renderChat(data);
     renderStats(data);
+    updateTicker(data);
   } catch(e) { console.error(e); }
 }
 
