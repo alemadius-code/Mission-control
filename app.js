@@ -147,7 +147,7 @@ function renderStats(data) {
 // Fetch & render
 async function refresh() {
   try {
-    const res = await fetch('/data/status.json?t=' + Date.now());
+    const res = await fetch('data/status.json?t=' + Date.now());
     if (!res.ok) return;
     const data = await res.json();
     renderDesks(data);
