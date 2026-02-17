@@ -277,6 +277,42 @@ body {
 }
 .footer-brand { color: var(--accent); }
 
+/* TASKS */
+.tasks-section {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+.tasks-section h2 { font-size: 16px; margin-bottom: 12px; }
+.tasks-section.pending h2 { color: var(--yellow); }
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  background: var(--bg2);
+  border-radius: 8px;
+  font-size: 13px;
+}
+.task-item.done { border-right: 3px solid var(--green); }
+.task-item.pending { border-right: 3px solid var(--yellow); }
+.task-item.working { border-right: 3px solid var(--cyan); }
+.task-name { font-weight: 600; }
+.task-by { font-size: 11px; color: var(--muted); }
+.task-time { font-size: 11px; color: var(--cyan); }
+.task-status {
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.task-status.done { background: rgba(34,197,94,0.15); color: var(--green); }
+.task-status.working { background: rgba(6,182,212,0.15); color: var(--cyan); }
+.task-status.pending { background: rgba(245,158,11,0.15); color: var(--yellow); }
+
 /* LIVE TICKER */
 .ticker-wrap {
   overflow: hidden;

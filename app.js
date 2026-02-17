@@ -132,6 +132,45 @@ function renderChat(data) {
   }
 }
 
+// Render tasks
+function renderTasks(data) {
+  const completed = document.getElementById('completedTasks');
+  const pending = document.getElementById('pendingTasks');
+  
+  const done = data.completedTasks || [];
+  if (done.length === 0) {
+    completed.innerHTML = '<p class="empty">لا توجد مهام مكتملة</p>';
+  } else {
+    completed.innerHTML = done.map(t => `
+      <div class="task-item done">
+        <div>
+          <div class="task-name">✅ ${t.name}</div>
+          <div class="task-by">👤 ${t.by} · ${t.time || ''}</div>
+        </div>
+        <span class="task-status done">مكتملة</span>
+      </div>
+    `).join('');
+  }
+  
+  const pend = data.pendingTasks || [];
+  if (pend.length === 0) {
+    pending.innerHTML = '<p class="empty">لا توجد مهام معلقة</p>';
+  } else {
+    pending.innerHTML = pend.map(t => {
+      const cls = t.status === 'جاري' ? 'working' : 'pending';
+      return `
+        <div class="task-item ${cls}">
+          <div>
+            <div class="task-name">⏳ ${t.name}</div>
+            <div class="task-by">👤 ${t.by}</div>
+          </div>
+          <span class="task-status ${cls}">${t.status}</span>
+        </div>
+      `;
+    }).join('');
+  }
+}
+
 // Ticker
 function updateTicker(data) {
   const now = new Date();
@@ -165,6 +204,7 @@ async function refresh() {
     renderReports(data);
     renderChat(data);
     renderStats(data);
+    renderTasks(data);
     updateTicker(data);
   } catch(e) { console.error(e); }
 }

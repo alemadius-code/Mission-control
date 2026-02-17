@@ -65,6 +65,7 @@
     <button class="tab active" data-tab="desks">🏢 المكاتب</button>
     <button class="tab" data-tab="meeting">🤝 الاجتماعات</button>
     <button class="tab" data-tab="reports">📊 التقارير</button>
+    <button class="tab" data-tab="tasks">📋 المهام</button>
     <button class="tab" data-tab="chat">💬 الشات</button>
   </div>
 
@@ -99,6 +100,18 @@
         <div class="reports-list" id="reportsList">
           <p class="empty">لا توجد تقارير بعد</p>
         </div>
+      </div>
+    </section>
+
+    <!-- TASKS VIEW -->
+    <section class="view" id="view-tasks">
+      <div class="tasks-section">
+        <h2>✅ المهام المكتملة</h2>
+        <div id="completedTasks" class="tasks-list"></div>
+      </div>
+      <div class="tasks-section pending">
+        <h2>⏳ المهام الجارية والمعلقة</h2>
+        <div id="pendingTasks" class="tasks-list"></div>
       </div>
     </section>
 

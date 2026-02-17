@@ -3,6 +3,18 @@
   "windows": "OK",
   "windowsDetail": "CPU 25% | RAM 45% | Disk OK",
   "tasksComplete": "3/8",
+  "completedTasks": [
+    {"name": "إعداد هوية كودكس (Bootstrap)", "by": "المبرمج", "time": "14:00"},
+    {"name": "إنشاء Second Brain بنظام PARA", "by": "المصمم", "time": "15:30"},
+    {"name": "بناء فريق Sub-Agents (5 أعضاء)", "by": "المبرمج", "time": "16:00"}
+  ],
+  "pendingTasks": [
+    {"name": "بناء موقع Mission Control v2", "by": "المبرمج", "status": "جاري"},
+    {"name": "مراقبة أخبار AI كل 6 ساعات", "by": "الباحث", "status": "جاري"},
+    {"name": "تحليل لعبة AI عميق", "by": "الباحث", "status": "قيد الانتظار"},
+    {"name": "فحص أداء النظام", "by": "المراقب", "status": "قيد الانتظار"},
+    {"name": "تقرير الـ6 ساعات القادم", "by": "كاتب التقارير", "status": "قيد الانتظار"}
+  ],
   "team": [
     {
       "name": "المبرمج",
