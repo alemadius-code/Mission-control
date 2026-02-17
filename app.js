@@ -132,6 +132,33 @@ function renderChat(data) {
   }
 }
 
+// Render cron jobs
+function renderCron(data) {
+  const container = document.getElementById('cronJobs');
+  const jobs = data.cronJobs || [];
+  
+  if (jobs.length === 0) {
+    container.innerHTML = '<p class="empty">لا توجد مهام مجدولة</p>';
+    return;
+  }
+  
+  container.innerHTML = jobs.map(j => {
+    const cls = j.status === 'active' ? 'active' : 'error';
+    const badgeText = j.status === 'active' ? '🟢 نشط' : '🔴 خطأ';
+    return `
+      <div class="cron-item ${cls}">
+        <div class="cron-header">
+          <span class="cron-name">⏰ ${j.name}</span>
+          <span class="cron-badge ${cls}">${badgeText}</span>
+        </div>
+        <div class="cron-detail">📝 ${j.description}</div>
+        <div class="cron-detail">آخر تشغيل: <span>${j.lastRun || '—'}</span> · القادم: <span>${j.nextRun || '—'}</span></div>
+        <span class="cron-schedule">🔄 ${j.schedule}</span>
+      </div>
+    `;
+  }).join('');
+}
+
 // Render tasks
 function renderTasks(data) {
   const completed = document.getElementById('completedTasks');
@@ -205,6 +232,7 @@ async function refresh() {
     renderChat(data);
     renderStats(data);
     renderTasks(data);
+    renderCron(data);
     updateTicker(data);
   } catch(e) { console.error(e); }
 }

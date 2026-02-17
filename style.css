@@ -277,6 +277,46 @@ body {
 }
 .footer-brand { color: var(--accent); }
 
+/* CRON */
+.cron-section {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 16px;
+}
+.cron-section h2 { font-size: 16px; margin-bottom: 14px; }
+.cron-item {
+  padding: 14px;
+  margin-bottom: 10px;
+  background: var(--bg2);
+  border-radius: 10px;
+  border-right: 3px solid var(--accent);
+}
+.cron-item.active { border-right-color: var(--green); }
+.cron-item.error { border-right-color: var(--red); }
+.cron-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.cron-name { font-size: 15px; font-weight: 700; }
+.cron-badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.cron-badge.active { background: rgba(34,197,94,0.15); color: var(--green); }
+.cron-badge.error { background: rgba(239,68,68,0.15); color: var(--red); }
+.cron-detail { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.cron-detail span { color: var(--cyan); font-weight: 600; }
+.cron-schedule { 
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  font-size: 11px;
+  color: var(--accent2);
+  margin-top: 6px;
+}
+
 /* TASKS */
 .tasks-section {
   background: var(--card);
