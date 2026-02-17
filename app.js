@@ -238,7 +238,7 @@ async function refresh() {
   } catch(e) { console.error(e); }
 }
 
-setInterval(refresh, 30000);
+setInterval(refresh, 5000);
 window.addEventListener('load', refresh);
 
 // PWA
