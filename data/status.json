@@ -17,6 +17,15 @@
   ],
   "team": [
     {
+      "name": "كودكس",
+      "role": "المدير العام",
+      "task": "إدارة الفريق وتنسيق المهام والتقارير",
+      "status": "working",
+      "progress": 95,
+      "model": "Claude Opus 4.6",
+      "lastActive": "الآن"
+    },
+    {
       "name": "المبرمج",
       "role": "برمجة وإصلاح",
       "task": "بناء موقع Mission Control v2",
