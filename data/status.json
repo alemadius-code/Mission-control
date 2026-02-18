@@ -1,5 +1,5 @@
 ﻿{
-    "lastUpdate":  "2026-02-18 22:48:49",
+    "lastUpdate":  "2026-02-19 02:27:54",
     "windows":  "OK",
     "windowsDetail":  "CPU 0% | RAM 0%",
     "tasksComplete":  "0/0",
@@ -111,6 +111,11 @@
               ],
     "reports":  [
                     {
+                        "title":  "summary-2026-02-19",
+                        "time":  "00:00",
+                        "body":  "# Auto report - 2026-02-19 00:00\r\n\r\n## Quick summary\r\n- Collected automatic updates from git + updates files\r\n\r\n## Done\r\n- (no git activity)\r\n\r\n## Needs follow-up\r\n- (Add tasks/blockers manually if ne..."
+                    },
+                    {
                         "title":  "summary-2026-02-18",
                         "time":  "13:46",
                         "body":  "# Auto report - 2026-02-18 13:46\r\n\r\n## Quick summary\r\n- Collected automatic updates from git + updates files\r\n\r\n## Done\r\n- (no git activity)\r\n\r\n## Needs follow-up\r\n- (Add tasks/blockers manually if ne..."
@@ -133,7 +138,7 @@
                          "schedule":  "0:00 / 6:00 / 12:00 / 18:00",
                          "status":  "active",
                          "lastRun":  "â€”",
-                         "nextRun":  "00:00",
+                         "nextRun":  "06:00",
                          "description":  "ØªÙ‚Ø§Ø±ÙŠØ± Ø¯ÙˆØ±ÙŠØ©: Ù…Ù„Ø®Øµ Ø§Ù„Ø¥Ù†Ø¬Ø§Ø²Ø§Øª + Ø§Ù„Ù…ØªØ§Ø¨Ø¹Ø© + Ø§Ù„Ø¹ÙˆØ§Ø¦Ù‚"
                      },
                      {
@@ -141,7 +146,7 @@
                          "schedule":  "ÙƒÙ„ 6 Ø³Ø§Ø¹Ø§Øª",
                          "status":  "active",
                          "lastRun":  "â€”",
-                         "nextRun":  "00:00",
+                         "nextRun":  "06:00",
                          "description":  "Ù…Ø³Ø­ HN/Reddit/Dev.to/arXiv Ù„Ø£Ø®Ø¨Ø§Ø± AI ÙˆØªØ·ÙˆÙŠØ± Ø§Ù„ÙˆÙŠØ¨ ÙˆØ§Ù„ØªØ·Ø¨ÙŠÙ‚Ø§Øª"
                      },
                      {
@@ -149,7 +154,7 @@
                          "schedule":  "0:00 / 6:00 / 12:00 / 18:00",
                          "status":  "active",
                          "lastRun":  "â€”",
-                         "nextRun":  "00:00",
+                         "nextRun":  "06:00",
                          "description":  "ØªØ­Ù„ÙŠÙ„ Ø¹Ù…ÙŠÙ‚: Ø£Ø¯ÙˆØ§Øª Ø§Ù„ØªØ·Ø¨ÙŠÙ‚Ø§Øª + Ù…Ø­Ø±ÙƒØ§Øª Ø§Ù„Ø£Ù„Ø¹Ø§Ø¨ + Ø§ØªØ¬Ø§Ù‡Ø§Øª AI + ÙØ±Øµ Ø§Ù„Ø³ÙˆÙ‚"
                      }
                  ]
